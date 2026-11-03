@@ -1,9 +1,9 @@
-# Portofolio - azriel
+# Portofolio - Feri
 Website portofolio pribadi yang saya buat di Kelas Industri UBIG 
 (Paket 1, Minggu 01 sampai 05).
 Website ini tampil rapi di ponsel, tablet, dan laptop.
 ## Tampilan
-![Tampilan beranda portofolio](azriel.png)
+![Tampilan beranda portofolio](tampilan.png.png)
 
 ## Fitur
 ## Teknologi
