@@ -1,10 +1,9 @@
+
 // Latihan JavaScript Dasar - Minggu 06
 // Kalkulator nilai rapor di Console
-
 // 1. Pesan pertama ke Console
-console.log("Halo, saya Azriel!");
+console.log("Halo, saya azriel!");
 console.log("Ini latihan JavaScript pertamaku.");
-
 // 2. Data siswa
 const nama = "Azriel Febriyan M";
 const kelas = "X RPL 1";
@@ -13,33 +12,49 @@ let nilaiTugas = 85;
 let nilaiUts = 78;
 let nilaiUas = 89;
 let kehadiran = 90;
-
 console.log(`Nama: ${nama}, kelas ${kelas}`);
-console.log(`Nilai tugas ${nilaiTugas}, UTS ${nilaiUts}, UAS ${nilaiUas}`);
+console.log(`Nilai tugas ${nilaiTugas}, UTS ${nilaiUts}, UAS $
+{nilaiUas}`);
+// 3. Fungsi
+const hitungRataRata = (tugas, uts, uas) => (tugas + uts + uas) / 3;
+function predikat(nilai) {
+  if (nilai >= 90) {
+    return "A";
+  } else if (nilai >= 80) {
+    return "B";
+  } else if (nilai >= 70) {
+    return "C";
+  } else {
+    return "D";
+  }
+}
+function rapor(namaSiswa, tugas, uts, uas) {
+  const rata = hitungRataRata(tugas, uts, uas);
+  return `${namaSiswa}: rata-rata ${rata}, predikat $
+{predikat(rata)}`;
+}
 
-// 3. Hasil nilai Azriel
-const rataRata = (nilaiTugas + nilaiUts + nilaiUas) / 3;
+// 4. Hasil nilai Andi
+const rataRata = hitungRataRata(nilaiTugas, nilaiUts, nilaiUas);
 const lulus = rataRata >= kkm;
 const dapatSertifikat = lulus && kehadiran >= 80;
-
 console.log(`Rata-rata nilai: ${rataRata}`);
+console.log(`Predikat: ${predikat(rataRata)}`);
 console.log(`Lulus KKM: ${lulus}`);
 console.log(`Dapat sertifikat: ${dapatSertifikat}`);
-
-let nilai = 68;
-if (nilai >= 75) {
-console.log("Lulus");
+// Pesan kelulusan
+if (lulus) {
+  console.log("Selamat, kamu lulus KKM!");
 } else {
-console.log("Remedial");
+  console.log("Tetap semangat, ikuti remedial ya.");
 }
-
-let nilai = 95;
-
-// Urutan salah: kondisi paling longgar diperiksa lebih dulu
-if (nilai >= 70) {
-console.log("Predikat C");
-} else if (nilai >= 80) {
-console.log("Predikat B");
-} else if (nilai >= 90) {
-console.log("Predikat A");
-}
+// 5. Menguji fungsi predikat dengan beberapa nilai
+console.log(`predikat(95) = ${predikat(95)}`); // A
+console.log(`predikat(90) = ${predikat(90)}`); // A, tepat di batas
+console.log(`predikat(84) = ${predikat(84)}`); // B
+console.log(`predikat(70) = ${predikat(70)}`); // C
+console.log(`predikat(69) = ${predikat(69)}`); // D
+// 6. Rapor beberapa siswa
+console.log(rapor("Andi", 85, 78, 89));
+console.log(rapor("Sinta", 92, 88, 96));
+console.log(rapor("Budi", 70, 65, 72));
