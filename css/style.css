@@ -1,5 +1,5 @@
-/* Gaya portofolio Andi Pratama
-   Palet: #1D3557 (utama), #E63946 (aksen), #F1FAEE (latar)
+/* Gaya portofolio Arya Nasrullah
+   Palet: #5B4636 (utama), #8A5A3B (cokelat), #C89562 (aksen), #E7D9C9 (latar)
    Huruf: Poppins (judul), Inter (isi)
    Tata letak: mobile first, titik ubah 768px (tablet) dan 1024px (laptop) */
 
@@ -10,8 +10,8 @@
 }
 
 img {
-  max-width: 270%;
-  height: 210px;
+  max-width: 100%;
+  height: auto;
 }
 
 /* 2. Dasar halaman: warna dan huruf */
@@ -19,13 +19,13 @@ body {
   font-family: "Inter", Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  color: #333333;
-  background-color: #F1FAEE;
+  color: #3D342D;
+  background-color: #E7D9C9;
 }
 
 h1, h2, h3 {
   font-family: "Poppins", Arial, sans-serif;
-  color: #1D3557;
+  color: #5B4636;
   line-height: 1.3;
 }
 
@@ -38,7 +38,7 @@ p, ul, ol {
 }
 
 a {
-  color: #E63946;
+  color: #8A5A3B;
 }
 
 /* 3. Wadah, header, dan menu */
@@ -49,7 +49,7 @@ a {
 }
 
 header {
-  background-color: #1D3557;
+  background-color: #5B4636;
   color: #FFFFFF;
   padding: 1rem 0;
 }
@@ -84,6 +84,11 @@ nav a {
   text-decoration: none;
 }
 
+nav a:hover,
+nav a:focus-visible {
+  background-color: #70452F;
+}
+
 /* Tantangan: menu ponsel buka-tutup dengan details */
 .menu-laptop {
   display: none;
@@ -91,7 +96,7 @@ nav a {
 
 .menu-ponsel summary {
   padding: 0.5rem 0.75rem;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #CDB9A5;
   border-radius: 6px;
   font-weight: 600;
   cursor: pointer;
@@ -121,7 +126,7 @@ main {
   height: 180px;
   max-width: 100%;
   object-fit: cover;
-  border: 4px solid #E63946;
+  border: 4px solid #C89562;
   border-radius: 50%;
 }
 
@@ -133,19 +138,23 @@ main {
   display: inline-block;
   padding: 0.75rem 1.5rem;
   border-radius: 6px;
-  background-color: #E63946;
+  background-color: #8A5A3B;
   color: #FFFFFF;
   font-weight: 600;
   text-decoration: none;
 }
 
 .kartu {
-  background-color: #FFFFFF;
+  background-color: #F4E8D9;
   padding: 1rem;
   margin-bottom: 1.5rem;
-  border: 1px solid #DDDDDD;
+  border: 1px solid #E5D6C7;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.kartu:hover {
+  border-color: #CDB9A5;
 }
 
 .daftar-kartu {
@@ -160,9 +169,13 @@ main {
   margin-bottom: 0;
 }
 
+.daftar-kartu .kartu:nth-child(even) {
+  background-color: #EBDCCB;
+}
+
 article img {
   border-radius: 8px;
-  border: 1px solid #DDDDDD;
+  border: 1px solid #E5D6C7;
 }
 
 /* 5. Tabel */
@@ -177,14 +190,18 @@ caption {
 }
 
 th, td {
-  border: 1px solid #CCCCCC;
+  border: 1px solid #E5D6C7;
   padding: 0.5rem 0.75rem;
   text-align: left;
 }
 
 th {
-  background-color: #1D3557;
+  background-color: #5B4636;
   color: #FFFFFF;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #F2E9DF;
 }
 
 /* 6. Form */
@@ -197,17 +214,22 @@ input, select, textarea {
   max-width: 22rem;
   padding: 0.6rem;
   margin-top: 0.25rem;
-  border: 1px solid #CCCCCC;
+  background-color: #F8F0E6;
+  border: 1px solid #D8C8B8;
   border-radius: 6px;
   font-family: inherit;
   font-size: 1rem;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #8A5A3B;
 }
 
 button {
   padding: 0.75rem 1.5rem;
   border: none;
   border-radius: 6px;
-  background-color: #E63946;
+  background-color: #8A5A3B;
   color: #FFFFFF;
   font-family: inherit;
   font-size: 1rem;
@@ -215,10 +237,17 @@ button {
   cursor: pointer;
 }
 
+button:hover,
+button:focus-visible,
+.tombol:hover,
+.tombol:focus-visible {
+  background-color: #70452F;
+}
+
 /* 7. Footer */
 footer {
-  background-color: #1D3557;
-  color: #F1FAEE;
+  background-color: #5B4636;
+  color: #F6F1EA;
   text-align: center;
   padding: 1.5rem;
 }
@@ -228,7 +257,7 @@ footer p {
 }
 
 footer a {
-  color: #FFFFFF;
+  color: #E2B783;
 }
 
 /* 8. Tablet: lebar layar 768px ke atas */

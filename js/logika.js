@@ -1,11 +1,12 @@
 // Soal 1: ganjil atau genap
+console.log("Latihan logika Arya Nasrullah");
 function ganjilGenap(angka) {
     if (angka % 2 === 0) {
         return " angka genap";
     } else {
         return " angka ganjil";
     }
-    
+
 }
 
 console.log("Soal 1: ganjil atau genap");
