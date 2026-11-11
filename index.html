@@ -3,36 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arya Nasrullah | Beranda</title>
-  <link rel="icon" href="arya-profile.jpeg" type="image/jpeg">
+  <title>Azriel Febriyan | Beranda</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/latihan.js" defer></script>
   <script src="js/main.js" defer></script>
+
 </head>
 <body>
   <header>
     <div class="container navbar">
-      <h1>Arya Nasrullah</h1>
+      <h1>Azriel Febriyan</h1>
       <nav class="menu-laptop">
         <ul>
           <li><a href="index.html">Beranda</a></li>
           <li><a href="proyek.html">Proyek</a></li>
           <li><a href="kontak.html">Kontak</a></li>
-          <li><a href="kantinsekolah.html">Kantin Sekolah</a></li>
+          <li><a href="kasir-kantin/kantinsekolah.html">Kasir Kantin</a></li>
         </ul>
       </nav>
+      <button type="button" id="tombol-tema" class="tombol-tema">Mode Gelap</button>
+
       <!-- Tantangan: menu ponsel yang bisa dibuka-tutup -->
       <details class="menu-ponsel">
-        <summary>Menu</summary>
+        <summary aria-label="Buka menu navigasi">Menu</summary>
         <nav>
           <ul>
             <li><a href="index.html">Beranda</a></li>
             <li><a href="proyek.html">Proyek</a></li>
             <li><a href="kontak.html">Kontak</a></li>
-            <li><a href="kantinsekolah.html">Kantin Sekolah</a></li>
+            <li><a href="kasir-kantin/kantinsekolah.html">Kasir Kantin</a></li>
           </ul>
         </nav>
       </details>
@@ -42,9 +43,9 @@
   <main>
     <div class="container">
       <section class="hero">
-        <img src="arya-profile.jpeg" alt="Foto profil Arya Nasrullah" width="180">
+        <img src="img/feri.jpeg" alt="Foto profil Azriel" width="180">
         <div>
-          <h2>Halo, saya Arya!</h2>
+          <h2>Halo, saya Azriel!</h2>
           <p>Siswa kelas X SMK, calon Junior Web Developer di Kelas Industri UBIG.</p>
           <a href="proyek.html" class="tombol">Lihat Proyek Saya</a>
         </div>
@@ -52,20 +53,19 @@
 
       <section class="kartu">
         <h2>Tentang Saya</h2>
-        <p>Saya adalah siswa kelas X SMK yang sedang mempelajari bidang teknologi informasi. Saya tertarik dengan pengembangan web dan ingin menjadi seorang Junior Web Developer di masa depan.</p>
+        <p>Saya tinggal di Pasuruan dan senang mencoba hal baru
+          di dunia teknologi. Saya ingin bisa membuat website yang
+          bermanfaat untuk sekolah dan UMKM di sekitar rumah.</p>
       </section>
 
       <div class="daftar-kartu">
         <section class="kartu">
           <h2>Hobi</h2>
           <ul>
-            <li>Nongkrong</li>
-            <li>Bermain gitar</li>
-            <li>Menonton film</li>
-            <li>Mendengarkan musik</li>
-            <li>Photo editing</li>
-            <li>Menulis diary</li>
-            <li>Membaca buku/e-book</li>
+            <li>Bermain Game</li>
+            <li>Bersepeda</li>
+            <li>Mendesain Proyek</li>
+            <li>Berenang</li>
           </ul>
         </section>
 
@@ -81,18 +81,15 @@
 
         <section class="kartu">
           <h2>Keahlian</h2>
-          <ul>
-            <li>HTML dasar (sedang dipelajari)</li>
-            <li>Mengetik cepat</li>
-            <li>Desain poster dengan Canva</li>
-          </ul>
+          <ul id="daftar-skill"></ul>
+          <p id="jumlah-skill"></p>
         </section>
       </div>
 
       <section class="kartu">
         <h2>Jadwal Belajar</h2>
         <table>
-          <caption>Jadwal belajar Arya setiap minggu</caption>
+          <caption>Jadwal belajar Azriel setiap minggu</caption>
           <thead>
             <tr>
               <th>Hari</th>
@@ -123,10 +120,10 @@
   </main>
 
   <footer>
-    <p>Kontak: <a href="mailto:sakkarepwes23@gmail.com">Arya.Nasrullah@gmail.com</a> |
-      <a href="https://github.com/Arya-Nasrullah" target="_blank">GitHub</a> |
-      <a href="https://www.youtube.com/@AryaNewWebDevelopment" target="_blank">YouTube</a></p>
-    <p>&copy; 2026 Arya Nasrullah. Dibuat di Kelas Industri UBIG.</p>
+    <p>Kontak: <a href="mailto:azrielfbryn@gmail.com">azrielfbryn@gmail.com</a> |
+      <a href="https://github.com/azriel-febriyan?tab=repositories" target="_blank" rel="noreferrer">GitHub</a> |
+      <a href="https://www.youtube.com/@azrielfbryn13" target="_blank" rel="noreferrer">YouTube</a></p>
+    <p>&copy; 2026 Azriel Febriyan. Dibuat di Kelas Industri UBIG.</p>
   </footer>
 </body>
 </html>
