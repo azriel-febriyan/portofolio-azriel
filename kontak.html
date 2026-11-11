@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arya Nasrullah | Kontak</title>
+  <title>azriel febriyan | Kontak</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
@@ -12,7 +12,7 @@
 <body>
   <header>
     <div class="container navbar">
-      <h1>Arya Nasrullah</h1>
+      <h1>azriel febriyan</h1>
       <nav class="menu-laptop">
         <ul>
           <li><a href="index.html">Beranda</a></li>
@@ -33,6 +33,7 @@
           </ul>
         </nav>
       </details>
+      <button type="button" id="tombol-tema">Mode Gelap</button>
     </div>
   </header>
 
@@ -45,7 +46,7 @@
         <form>
           <p>
             <label for="nama">Nama lengkap</label><br>
-            <input type="text" id="nama" name="nama" placeholder="Contoh: Arya Dilan" required>
+            <input type="text" id="nama" name="nama" placeholder="Contoh: azriel Dilan" required>
           </p>
           <p>
             <label for="email">Email</label><br>
@@ -66,7 +67,8 @@
           </p>
           <p>
             <label for="pesan">Pesan</label><br>
-            <textarea id="pesan" name="pesan" rows="5" cols="40" placeholder="Tulis pesanmu di sini" required></textarea>
+            <textarea id="pesan" name="pesan" rows="5" cols="40" maxlength="300" placeholder="Tulis pesanmu di sini" required></textarea>
+            <span id="hitung-karakter" aria-live="polite">0/300 karakter</span>
           </p>
           <button type="submit">Kirim Pesan</button>
         </form>
@@ -75,10 +77,11 @@
   </main>
 
   <footer>
-    <p>Kontak: <a href="mailto:sakkarepwes23@gmail.com">Arya.Nasrullah@gmail.com</a> |
-      <a href="https://github.com/Arya-Nasrullah" target="_blank">GitHub</a> |
-      <a href="https://www.youtube.com/@AryaNewWebDevelopment" target="_blank">YouTube</a></p>
-    <p>&copy; 2026 Arya Nasrullah. Dibuat di Kelas Industri UBIG.</p>
+    <p>Kontak: <a href="mailto:sakkarepwes23@gmail.com">azriel.febriyan@gmail.com</a> |
+      <a href="https://github.com/azriel-febriyan" target="_blank">GitHub</a> |
+      <a href="https://www.youtube.com/@azrielNewWebDevelopment" target="_blank">YouTube</a></p>
+    <p>&copy; 2026 azriel febriyan. Dibuat di Kelas Industri UBIG.</p>
   </footer>
+  <script src="js/main.js" defer></script>
 </body>
 </html>

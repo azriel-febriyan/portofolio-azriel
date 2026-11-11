@@ -1,5 +1,5 @@
 // Soal 1: ganjil atau genap
-console.log("Latihan logika Arya Nasrullah");
+console.log("Latihan logika Azriel Febriyan");
 function ganjilGenap(angka) {
     if (angka % 2 === 0) {
         return " angka genap";
