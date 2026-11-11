@@ -2,10 +2,10 @@
 // Latihan JavaScript Dasar - Minggu 06
 // Kalkulator nilai rapor di Console
 // 1. Pesan pertama ke Console
-console.log("Halo, saya Azriel Febriyan!");
+console.log("Halo, saya Arya Nasrullah!");
 console.log("Ini latihan JavaScript pertama saya.");
 // 2. Data siswa
-const nama = "Azriel Febriyan";
+const nama = "Arya Nasrullah";
 const kelas = "X RPL 1";
 const kkm = 75;
 let nilaiTugas = 85;
@@ -32,7 +32,7 @@ function rapor(namaSiswa, tugas, uts, uas) {
   return `${namaSiswa}: rata-rata ${rata}, predikat ${predikat(rata)}`;
 }
 
-// 4. Hasil nilai Azriel
+// 4. Hasil nilai Arya
 const rataRata = hitungRataRata(nilaiTugas, nilaiUts, nilaiUas);
 const lulus = rataRata >= kkm;
 const dapatSertifikat = lulus && kehadiran >= 80;
@@ -52,5 +52,5 @@ console.log(`predikat(90) = ${predikat(90)}`); // A, tepat di batas
 console.log(`predikat(84) = ${predikat(84)}`); // B
 console.log(`predikat(70) = ${predikat(70)}`); // C
 console.log(`predikat(69) = ${predikat(69)}`); // D
-// 6. Rapor Azriel
-console.log(rapor("Azriel Febriyan", 85, 78, 89));
+// 6. Rapor Arya
+console.log(rapor("Arya Nasrullah", 85, 78, 89));
