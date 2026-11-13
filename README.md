@@ -1,11 +1,26 @@
-# Portofolio - azriel
-Website portofolio pribadi yang saya buat di Kelas Industri UBIG 
-(Paket 1, Minggu 01 sampai 05).
-Website ini tampil rapi di ponsel, tablet, dan laptop.
-## Tampilan
-![Tampilan beranda portofolio](azriel.png)
+# Portofolio Arya Nasrullah
+
+Website portofolio pribadi Arya Nasrullah, dibuat di Kelas Industri UBIG
+(Paket 1, Minggu 01 sampai 06). Website ini responsif untuk ponsel, tablet,
+dan laptop.
 
 ## Fitur
+
+- Halaman beranda berisi profil, hobi, cita-cita, keahlian, dan jadwal belajar
+- Halaman proyek menampilkan hasil belajar dalam bentuk kartu
+- Halaman kontak menyediakan formulir untuk menghubungi Arya
+- Halaman kantin sekolah menampilkan daftar makanan dan minuman
+- Tampilan responsif dengan Flexbox dan media query
+
 ## Teknologi
-## Tautan- Halaman **Beranda** berisi profil, hobi, cita-cita, keahlian, dan 
-jadwal belajar- Halaman **Proyek** berisi daftar proyek dalam bentuk kartu- Halaman **Kontak** berisi form untuk menghubungi saya- Tampilan responsif dengan Flexbox dan *media query*- HTML5- CSS3 (Flexbox dan media query)- Git dan GitHub- Website: menyusul setelah *deploy* ke Vercel- Dibuat oleh: Andi Pratama, SMK Mitr
+
+- HTML5
+- CSS3
+- JavaScript
+- Git dan GitHub
+
+## Tautan
+
+- GitHub: [Arya Nasrullah](https://github.com/Arya-Nasrullah)
+- YouTube: [Arya New Web Development](https://www.youtube.com/@AryaNewWebDevelopment)
+- Dibuat oleh Arya Nasrullah, SMK Mitra
