@@ -45,7 +45,7 @@
     button:hover {
       background-color: #c9302c;
     }
-    #hasil {
+    #hasil-kalkulator {
       margin-top: 15px;
       font-weight: bold;
     }
@@ -57,25 +57,27 @@
     <h2>Kalkulator Nilai</h2>
     <p>Masukkan nilai tugas, UTS, dan UAS, lalu tekan tombol Hitung.</p>
 
-    <div class="form-group">
-      <label for="tugas">Nilai Tugas</label>
-      <input type="number" id="tugas" placeholder="0 - 100">
-    </div>
+    <form id="form-kalkulator">
+      <div class="form-group">
+        <label for="tugas">Nilai Tugas</label>
+        <input type="number" id="tugas" name="tugas" min="0" max="100" step="any" required>
+      </div>
 
-    <div class="form-group">
-      <label for="uts">Nilai UTS</label>
-      <input type="number" id="uts" placeholder="0 - 100">
-    </div>
+      <div class="form-group">
+        <label for="uts">Nilai UTS</label>
+        <input type="number" id="uts" name="uts" min="0" max="100" step="any" required>
+      </div>
 
-    <div class="form-group">
-      <label for="uas">Nilai UAS</label>
-      <input type="number" id="uas" placeholder="0 - 100">
-    </div>
+      <div class="form-group">
+        <label for="uas">Nilai UAS</label>
+        <input type="number" id="uas" name="uas" min="0" max="100" step="any" required>
+      </div>
 
-    <button id="hitung">Hitung</button>
+      <button type="submit">Hitung</button>
+    </form>
 
-    <p id="hasil"></p>
+    <p id="hasil-kalkulator" role="status" aria-live="polite" hidden></p>
   </div>
-<script src="js/main.js" defer></script>
+<script src="js/kalkulator.js" defer></script>
 </body>
 </html>
