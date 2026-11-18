@@ -3,13 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Azriel Febriyan | Proyek</title>
+  <title>Azriel | Proyek</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/main.js" defer></script>
-
 </head>
 <body>
   <header>
@@ -20,21 +18,19 @@
           <li><a href="index.html">Beranda</a></li>
           <li><a href="proyek.html">Proyek</a></li>
           <li><a href="kontak.html">Kontak</a></li>
-          <li><a href="kasir-kantin/kantinsekolah.html">Kasir Kantin</a></li>
-
+          <li><a href="kalkulator.html">Kalkulator</a></li>
         </ul>
       </nav>
       <button type="button" id="tombol-tema" class="tombol-tema">Mode Gelap</button>
       <!-- Tantangan: menu ponsel yang bisa dibuka-tutup -->
       <details class="menu-ponsel">
-        <summary aria-label="Buka menu navigasi">Menu</summary>
+        <summary>Menu</summary>
         <nav>
           <ul>
             <li><a href="index.html">Beranda</a></li>
             <li><a href="proyek.html">Proyek</a></li>
             <li><a href="kontak.html">Kontak</a></li>
-            <li><a href="kasir-kantin/kantinsekolah.html">Kasir Kantin</a></li>
-
+            <li><a href="kalkulator.html">Kalkulator</a></li>
           </ul>
         </nav>
       </details>
@@ -47,38 +43,45 @@
         <h2>Proyek Saya</h2>
         <p>Kumpulan hasil belajar saya di Kelas Industri UBIG.</p>
 
-        <div class="filter" role="group" aria-label="Filter kategori proyek">
-          <button type="button" class="tombol-filter aktif" id="filter-semua" aria-pressed="true">Semua</button>
-          <button type="button" class="tombol-filter" id="filter-html" aria-pressed="false">HTML</button>
-          <button type="button" class="tombol-filter" id="filter-css" aria-pressed="false">CSS</button>
-          <button type="button" class="tombol-filter" id="filter-javascript" aria-pressed="false">JavaScript</button>
-        </div>
-        <p id="jumlah-proyek" aria-live="polite"></p>
-        <div class="daftar-kartu galeri-proyek" id="daftar-proyek">
-          <noscript>Aktifkan JavaScript untuk melihat daftar proyek.</noscript>
+        <div class="filter">
+    <button type="button" class="tombol-filter" id="filter-semua">
+      Semua
+    </button>
+    <button type="button" class="tombol-filter" id="filter-HTML">
+      HTML
+    </button>
+    <button type="button" class="tombol-filter" id="filter-CSS">
+      CSS
+    </button>
+    <button type="button" class="tombol-filter" id="filter-javascript">
+      JavaScript
+    </button>
+</div>
+<p id="jumlah-proyek"></p>
+<div class="daftar-kartu" id="daftar-proyek"></div>
+<section>
+  <h2>Repositori GitHub Saya</h2>
+  <p>Daftar repositori dari akun GitHub saya.</p>
+
+  <p id="status-repo-github" aria-live="polite">
+    Menyiapkan data repositori...
+  </p>
+
+  <div class="daftar-kartu" id="daftar-repo-github"></div>
+</section>
         </div>
       </section>
 
       <!-- FAQ dengan details dan summary -->
-      <section class="kartu">
-        <h2>Pertanyaan yang Sering Diajukan</h2>
-        <details>
-          <summary>Bahasa apa yang dipakai untuk membuat proyek ini?</summary>
-          <p>Proyek di halaman ini dibuat dengan HTML, CSS, dan JavaScript. Pilih tombol kategori untuk melihat proyek per bahasa.</p>
-        </details>
-        <details>
-          <summary>Apakah saya menerima pesanan pembuatan website?</summary>
-          <p>Belum, saya masih belajar. Namun kamu tetap boleh menghubungi saya melalui halaman Kontak.</p>
-        </details>
-      </section>
-    </div>
-  </main>
+      <p>Proyek di halaman ini dibuat dengan HTML, CSS, dan JavaScript.
+Pilih tombol kategori di atas untuk melihat proyek per bahasa.</p>
 
   <footer>
     <p>Kontak: <a href="mailto:azrielfbryn@gmail.com">azrielfbryn@gmail.com</a> |
-      <a href="https://github.com/azriel-febriyan?tab=repositories" target="_blank" rel="noreferrer">GitHub</a> |
-      <a href="https://www.youtube.com/@azrielfbryn13" target="_blank" rel="noreferrer">YouTube</a></p>
-    <p>&copy; 2026 Azriel Febriyan. Dibuat di Kelas Industri UBIG.</p>
+      <a href="https://github.com/azriel-febriyan" target="_blank">GitHub</a> |
+      <a href="https://www.youtube.com/@azrielfbryn13" target="_blank">YouTube</a></p>
+    <p>&copy; 2026 Azriel. Dibuat dengan semangat sambil belajar di Kelas Industri UBIG.</p>
   </footer>
+  <script src="js/main.js" defer></script>
 </body>
 </html>
